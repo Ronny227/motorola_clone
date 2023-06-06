@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorola</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Model-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 model-logo-wrap">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <img src="assets/img/model-logo.png" alt="" class="model-logo">
+                        </div>
+                        <div class="col-sm-12">
+                            <p class="model-para">We are always looking for ways to improve</p>
+                            <p class="model-para"> Please tell us what you think of our website below.</p>
+                        </div>
+                        <hr>
+                        <div class="col-sm-12">
+                            <p>Overall, how satisfied are you with your website experience today?*</p>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="rating-msg">
+                                <p>Not At All Satisfied</p>
+                                <p>Extremely Satisfied</p>
+                            </div>
+
+                            <div class="rating-box">
+                                <div class="box-item">0</div>
+                                <div class="box-item">1</div>
+                                <div class="box-item">2</div>
+                                <div class="box-item">3</div>
+                                <div class="box-item">4</div>
+                                <div class="box-item">5</div>
+                                <div class="box-item">6</div>
+                                <div class="box-item">7</div>
+                                <div class="box-item">9</div>
+                                <div class="box-item">10</div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 pt-5">
+                            <textarea class="form-control" placeholder="Please tell about why you feel this way ?" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                        <p>Which of the following best describes the primary purpose of your visit to Motorola.com today?</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Please select your answer</option>
+                            <option value="1">Just browsing</option>
+                            <option value="2">Look for specific product</option>
+                            <option value="3">Compare Product</option>
+                            <option value="3">Purchase Product</option>
+                        </select>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <p>Were you able to obtain what you needed today?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                No
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                Not Yet
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <p>To what extent do you agree with the following statement: This website is easy to use.</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Strongly Disagree
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Disagree
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Somewhat Disagree
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Neither Agree nor Disagree
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Somewhat Agree
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Agree
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Strongly  Agree
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <label for="exampleFormControlTextarea1" class="form-label">Motorola strives to make things easy for our customers. Please tell us why you feel this way.</label>
+                            <textarea class="form-control" placeholder="Please tell about why you feel this way ?" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <label for="exampleFormControlTextarea1" class="form-label">Based on your experience(s) with Motorola, what is the biggest improvement we could make?</label>
+                            <textarea class="form-control" placeholder="Please tell about why you feel this way ?" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-sm-12 mt-5">
+                            <label for="exampleFormControlTextarea1" class="form-label">Please enter your email address (optional).</label>
+                            <textarea class="form-control" placeholder="Please tell about why you feel this way ?" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="col-sm-12 d-flex justify-content-end mt-5">
+                            <button type="button" class="btn btn-warning ">Send Feedback</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="feedback" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Feedback</button>
+    
+    <!-- header-->
+    <header class="container-fluid">
+        <div class="row header-wrapper">
+            <div class="col-sm-12 header-top-menu">
+                <p class="top-menu-item">HELLOMOTO</p>
+                <p class="top-menu-item">CHEKOUT OUR LATEST SALE</p>
+            </div>
+    
+            <div class="col-sm-12 col-md-12 col-lg-7 header-menu">
+                <div class="mobile-menu-icon mt-3 mb-3" onclick="openMainMenu()"></div>
+                <ul class="mobile-menu-icon-wrapper mt-3 mt-3">
+                    <li>
+                        <img src="assets/img/logo.svg" alt="">
+                    </li>
+                    <li><span onclick="openCloseMenu(this)">Shop Phones </span>
+                        <ul class="header-sub-menu">
+                            <li>
+                                <img src="assets/img/shop-phone-2.webp" alt="">
+                                <p>5G</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/shop-phone.webp" alt="">
+                                <p>Compatibility</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-3.webp" alt="">
+                                <p>SALEabrate Summer</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-4.webp" alt="">
+                                <p>Compare phones</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-5.webp" alt="">
+                                <p>Tablet</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li><span onclick="openCloseMenu(this)">On sale  </span>
+                        <ul class="header-sub-menu on-sale-wrapper">
+                            <li>
+                                <img src="assets/img/menu-1.webp" alt="">
+                                <p>$800 of razr</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-2.webp" alt="">
+                                <p>$200 off moto g 5G</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-3.webp" alt="">
+                                <p>SALEabrate Summer</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-4.webp" alt="">
+                                <p>Compare phones</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/menu-5.webp" alt="">
+                                <p>Tablet</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li><span onclick="openCloseMenu(this)">Business</span>
+                        <ul class="header-sub-menu business-menu-wrapper" >
+                            <li>
+                                <img src="assets/img/business-1.webp" alt="">
+                                <p>Thinkphone</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/business-2.webp" alt="">
+                                <p>Thinkshield</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/business-3.webp" alt="">
+                                <p>B2B INQUIRY</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li>Accessories</li>
+                    <li> <span onclick="openCloseMenu(this)">Smart Products</span>
+                        <ul class="header-sub-menu smart-pro-wrapper">
+                            <li>
+                                <img src="assets/img/smart-pro.webp" alt="">
+                                <p>Home & Office Phones</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/smart-pro-2.webp" alt="">
+                                <p>Smart Nursery & Monitors</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/smart-pro-3.webp" alt="">
+                                <p>Wearables</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/smart-pro-4.webp" alt="">
+                                <p>Security & Surveillance</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/smart-pro-5.webp" alt="">
+                                <p>Modems + Routers</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li>Software</li>
+                    <li> <span onclick="openCloseMenu(this)">Support</span>
+                        <ul class="header-sub-menu pro-support-wrapper">
+                            <li>
+                                <img src="assets/img/pro-support.webp" alt="">
+                                <p>Product Support</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li> <span onclick="openCloseMenu(this)">Services</span>
+                        <ul class="header-sub-menu service-menu-wrapper">
+                            <li>
+                                <img src="assets/img/services-1.webp" alt="">
+                                <p>5G</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/services-2.webp" alt="">
+                                <p>Compatibility</p>
+                            </li>
+                            <li>
+                                <img src="assets/img/services-3.webp" alt="">
+                                <p>SALEabrate Summer</p>
+                            </li>
+                            <li onclick="closeMenu()">x</li>
+                        </ul>
+                    </li>
+                    <li onclick="closeMainMenu()">x</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero sections -->
+    <section >
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="main-item-wrapper">
+                    <img src="assets/img/moto-g-main.webp" alt="">
+                    <h3> <span>SUPERFAST.SUPERSHARP</span> <span>Available now</span></h3>
+                    <p class="main-price">$249.0</p>
+                    <button>Buy Now</button>
+                </div>
+                <img src="assets/img/slide.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="main-item-wrapper">
+                    <img src="assets/img/think-pade.svg" alt="">
+                    <h3> <span>THINK TOGETHER</span> <span>THINKPHONE.</span></h3>
+                    <p class="main-price">$699</p>
+                    <button>Buy Now</button>
+                </div>
+                <img src="assets/img/main-slide-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class="main-item-wrapper">
+                    <img src="assets/img/moto-g-main-2.webp" alt="">
+                    <h3> <span>EXPLORE ENDLESS</span> <span>POSSIBILITY.</span><span>Now available</span></h3>
+                    <p class="main-price">$799</p>
+                    <button>Buy Now</button>
+                </div>
+                <img src="assets/img/main-slide-3.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- center section -->
+    <section class="center-wrapper mt-5">
+        <ul class="center-wrap-heading ">
+            <li>Newest</li>
+            <li>Premium</li>
+            <li>5G</li>
+            <li>Value</li>
+            <li>Best Deals</li>
+        </ul>
+    </section>
+
+    <section class="mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row center-slide-wrap">
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">motorola edge+ (2023)</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">moto g 5g - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-2.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 ">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name  mt-5">moto g power 5G - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-3.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row center-slide-wrap">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">motorola edge+ (2023)</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">moto g 5g - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-2.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name  mt-5">moto g power 5G - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-3.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row center-slide-wrap">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">motorola edge+ (2023)</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name mt-5">moto g 5g - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-2.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <div class="center-slide-item">
+                            <p class="center-slide-name  mt-5">moto g power 5G - 2023</p>
+                            <strike>$299.9</strike>
+                            <p class="center-slide-price">$799.0</p>
+                            <button class="center-slide-btn">Buy now</button>
+                            <img src="assets/img/center-slide-3.png" alt="" class="center-slide-img">
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row bg-wrapper mb-5">
+            <div class="col-sm-12 col-md-4 mobile-bg"></div>
+            <div class="col-sm-12 col-md-8 mobile-bg2"></div>
+        </div>
+    </section>
+
+    <section class="container-fluid trending-section">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="bottom-title">Trending Now</p>
+            </div>
+
+            <div class="col-sm-12 center-slider mt-4 mb-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/center-slide.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-1"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-2.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-2"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-3"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-4.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-4"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-1"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-2.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-2"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-3"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-4.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-4"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-1"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-2.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-2"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-3.jpg" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-3"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="item-wrapper">
+                                    <img src="assets/img/btm-slide-4.png" class="d-block w-100" alt="...">
+                                    <div class="box-circle box-circle-4"></div>
+                                    <p class="mobile-name">motorola edge+ (2023)</p>
+                                    <div class="mobile-price">
+                                        <strike>$800</strike>
+                                        <p>$700</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 search-for-wrap-container">
+                <h1 class="search-for">
+                    <span>Searching for something</span> <span> different?</span> 
+                </h1>
+
+                <div class="search-wrap-bottm mt-3">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="search-box-bottom mt-3">
+                    <span>motorola edge 2022</span>
+                    <span>moto g stylus 5G 2022</span>
+                    <span>razr (2nd gen)</span>
+                    <span>moto g power</span>
+                    <span>motorola edge+</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid dont-miss-wrapper mt-5">
+        <div class="row ">
+            <div class="col-sm-12 col-md-5 offset-md-4 mt-5">
+                <h1>Don't miss anything!</h1>
+                <div class="miss-wrapper mt-3">
+                    <input type="text" placeholder="E-mail address">
+                    <button class="miss-button">Subscribe now!</button>
+                </div>
+
+                <div class="checkbox-wrapper mt-3">
+                    <input type="checkbox">
+                    <span>I agree to receive product information and special promotional offers by email from Motorola, and I confirm that I am 16 years of age or older.</span>
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-md-7 offset-md-3 instruction-wrapper mt-5">
+                <p class="instruction"> * ssale good from May 22, at 12:01 am CST to May 29, at 11:59 pm CST or while supplies last. and cannot be combined with other offers.</p>
+                <p class="instruction">* 5G service available with 5G plan. 5G network coverage required; available only in select areas; device not compatible with all 5G networks. Contact your service provider for details. Based on 5G sub-6GHz network connectivity, providing 125-360Mbps download speeds to the average user. Available with 5G service plan and 5G network coverage. See carrier for details.</p>
+                <p class="instruction"> ** Battery must be substantially depleted; charging rate slows as charging progresses. All battery life claims are approximate and based on the median user tested across a mixed use profile (which includes both usage and standby time) under optimal network conditions. Actual battery performance will vary and depends on many factors including signal strength, network and device settings, temperature, battery condition, and usage patterns. ** Orders must be placed by 12:00 PM CST for phone to arrive next day. No weekend delivery, see full details at checkout. ***Based on 5G sub-6GHz network connectivity, providing 125-360Mbps download speeds to the average user. Available with 5G service plan and 5G network coverage available in certain areas. All battery life claims are approximate and based on the median user tested across a mixed use profile (which includes both usage and standby time) under optimal network conditions. Actual battery performance will vary and depends on many factors including signal strength, network and device settings, temperature, battery condition, and usage patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer-wrapper mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 offset-md-1">
+                <div class="row footer-items mt-5">
+                    <div class="col-sm-12 col-md-3">
+                        <ul>
+                            <li>Products</li>
+                            <li>Razr Family</li>
+                            <li>Motorola Edge Family</li>
+                            <li>Moto G Family</li>
+                            <li>All Moto phones</li>
+                            <li>Lenovo Tablet</li>
+                            <li>Spanish</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <ul>
+                            <li>Motorola Home</li>
+                            <li>Baby monitors</li>
+                            <li>Bluetooth headsets</li>
+                            <li>All Home Products</li>
+                            <li>Home & office phones</li>
+                            <li>Modems & gateways</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <ul>
+                            <li>Support</li>
+                            <li>Product support</li>
+                            <li>Forums</li>
+                            <li>Contact us</li>
+                            <li>Financing</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12 col-md-3">
+                        <ul>
+                            <li>About</li>
+                            <li>Motorola</li>
+                            <li>Lenovo</li>
+                            <li>Licensing</li>
+                            <li>Lenovo Cares</li>
+                            <li>Terms of sale</li>
+                            <li>Products Privacy</li>
+                            <li>Website Privacy</li>
+                            <li>Executive team</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 footer-item-wrap">
+                <p class="footer-heading"><a href="">INDIA</a></p>
+                <p class="footer-logo"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1 clr-white" style="font-size: 12px;letter-spacing: 1px;font-weight: 100;">
+                <p><b>© 2023 Motorola Mobility LLC. All Rights Reserved</b></p><p><b>MOTOROLA, the Stylized M Logo, MOTO and the MOTO family of marks are trademarks of Motorola Trademark Holdings, LLC. LENOVO is a trademark of Lenovo. All other trademarks are the property of their respective owners. © 2017 Motorola Mobility LLC.</b></p><p><b>All mobile phones are designed and manufactured by Motorola Mobility LLC, a wholly owned subsidiary of Lenovo.</b></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
